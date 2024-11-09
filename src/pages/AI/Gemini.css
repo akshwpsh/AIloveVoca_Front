@@ -1,0 +1,114 @@
+/* Gemini.css */
+
+.gemini-page {
+    width: 100%;
+    height: 100%;
+}
+
+.gemini-page .info {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    /*background: blue;*/
+}
+
+.gemini-page .info .input {
+    flex-shrink: 0;
+    width: 451px;
+    height: 40px;
+    border-radius: 8px;
+    padding: 16px;
+    border: none;
+    outline: none;
+    background: #EAEAEA;
+    font-size: 16px;
+}
+
+.gemini-page .info .texts{
+    height: 30vh;
+}
+
+.gemini-page .info .text {
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:#4C4C57;
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gemini-page .info .buttons{
+    box-sizing: border-box; /* padding과 border를 width에 포함 */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    /*background-color: red; !* 필요에 따라 변경 *!*/
+}
+
+.gemini-page .info .buttons .button:nth-child(2) {
+    margin-left: 20px; /* 이전 버튼과 다음 버튼 사이의 간격을 설정 */
+}
+.gemini-page .info .buttons .button:nth-child(3) {
+    margin-left: 20px; /* 이전 버튼과 다음 버튼 사이의 간격을 설정 */
+}
+
+.gemini-page .info .button {
+    flex: 1; /* 버튼의 너비를 동일하게 만듭니다. */
+    border-radius: 15px;
+    padding: 16px;
+    background: #3A89FF;
+}
+
+.gemini-page .info .button .button_text {
+    color: #FFFFFF;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .gemini-page .text- {
+        top: 70%;
+        font-size: 10px;
+    }
+
+    .gemini-page .info {
+        top: 30%;
+        row-gap: 15px;
+    }
+
+    .gemini-page .info .button .button_text {
+        font-size: 5vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .gemini-page .text- {
+        top: 60%;
+        font-size: 8px;
+    }
+
+    .gemini-page .info {
+        top: 30%;
+        row-gap: 10px;
+    }
+
+
+    .gemini-page .info .button .button_text {
+        font-size: 6vw;
+    }
+}
